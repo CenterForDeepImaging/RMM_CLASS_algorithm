@@ -22,6 +22,8 @@ References
                https://www.nature.com/articles/nphoton.2015.24
 *	CLASS microscopy: S. Kang, et. al., Nature Communications 8, 2157 (2017)
                https://www.nature.com/articles/s41467-017-02117-8
+*	RMM and CLASS algorithm tutorial: S. Kang, et. al., arxiv preprint (2024)
+               https://arxiv.org/abs/2407.02321
 
 Demo scripts
 *	Example_numerical_data.m: Demonstrates RM construction, image reconstruction, and CLASS 
