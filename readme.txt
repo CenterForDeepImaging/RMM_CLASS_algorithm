@@ -1,20 +1,20 @@
-Reflection matrix microscopy and CLASS sample data and algorithms
+Reflection matrix microscopy and CLASS algorithms
 
 This software package includes essential algorithms for reflection matrix microscope (RMM) and the 
 CLASS algorithm. RMM is an advanced deep-tissue imaging technique that measures the reflected 
 electric field of thick scattering samples while varying the illumination channels. The package contains 
-detailed algorithm implementations, experimental and numerical data to promote the widespread adoption 
-of RMM in various deep-tissue imaging applications.
+detailed algorithm implementations to promote the widespread adoption of RMM in various deep-tissue 
+imaging applications.
 
-The package comprises RMM and CLASS functions, sample data, and example scripts that demonstrate 
-the processing of the sample data. All functions and scripts in the package were developed and tested 
-with Matlab R2021a.
+The package comprises RMM and CLASS functions, and example scripts that demonstrate the processing of the 
+sample data uploaded in a public data repository (https://doi.org/10.6084/m9.figshare.26096095.v1). 
+All functions and scripts in the package were developed and tested with Matlab R2021a.
 
-All codes and datasets were created by Sungsam Kang from Super-depth imaging group at Korea 
-University. (https://www.bioimaging.korea.ac.kr/)
+All codes and datasets were created by Sungsam Kang from Center for deep optical imaging group at Korea 
+University. (https://bioimaging.korea.ac.kr/)
 
 Sungsam Kang
-2024. 06. 25
+2024. 11. 12
 
 
 References
@@ -25,11 +25,11 @@ References
 
 Demo scripts
 *	Example_numerical_data.m: Demonstrates RM construction, image reconstruction, and CLASS 
-functions from the simulation dataset ¡®numerical_data_RMM_simulation.mat¡¯.
+functions from the simulation dataset Â¡Â®numerical_data_RMM_simulation.matÂ¡Â¯.
 *	Example_experimental_data.m: Demonstrate RM construction, image reconstruction, and CLASS 
-functions from the experimental dataset ¡®Experimental_data_USAF.mat¡¯.
+functions from the experimental dataset Â¡Â®Experimental_data_USAF.matÂ¡Â¯.
 *	Example_3D_reconstruction.m: Demonstrate 3D image reconstruction from the simulation 
-dataset ¡®numerical_data_3D_beads.mat¡¯.
+dataset Â¡Â®numerical_data_3D_beads.matÂ¡Â¯.
 *	Example_RMM_simulation.m: Generate RM simulation data.
 
 Functions (...\RMM_functions)
@@ -39,23 +39,23 @@ Functions (...\RMM_functions)
 *	RM_ifft.m: Performs inverse Fourier transform from spatial frequency basis to position basis.
 *	RM_3D_recon.m: Reconstructs 3D images from RM.
 *	Indexing_array_mt.mexw64: Mex function for multi-thread logical indexing.
-*	Indexing_array_mt.cpp: C++ source code for ¡®Indexing_array_mt.mexw64¡¯. 
+*	Indexing_array_mt.cpp: C++ source code for Â¡Â®Indexing_array_mt.mexw64Â¡Â¯. 
 Compile this file if mex function do not work properly using following command:
-¡®mex -R2018a indexing_array_mt.cpp¡¯
+Â¡Â®mex -R2018a indexing_array_mt.cppÂ¡Â¯
 *	CLASS.m: The CLASS function that quantifies and corrects input and output aberrations from 
 RM.
 *	RM_ab_correction.m: Corrects input and output aberrations from RM using the CLASS result.
 
-Datasets (...\RMM_sample_data)
+Datasets uploaded at https://doi.org/10.6084/m9.figshare.26096095.v1  (...\RMM_sample_data)
 *	Experimental_data_USAF.mat: Experimentally measured RM data of a USAF target under a 
 1.5mm thick glass plate. Detailed description of the data is included in the script 
-¡®Example_experimental_data.m¡¯.
-*	numerical_data_RMM_simulation.mat: Numerically generated RM data of the ¡®cameraman.tif¡¯ 
+Â¡Â®Example_experimental_data.mÂ¡Â¯.
+*	numerical_data_RMM_simulation.mat: Numerically generated RM data of the Â¡Â®cameraman.tifÂ¡Â¯ 
 image with and without aberrations. Detailed description of the data is included in the script 
-¡®Example_numerical_data.m¡¯.
+Â¡Â®Example_numerical_data.mÂ¡Â¯.
 *	numerical_data_3D_beads.mat: Numerically generated RM data of point particles distributed 
 within a 3D volume. Detailed description of the data is included in the script 
-¡®Example_3D_reconstruction.m¡¯.
+Â¡Â®Example_3D_reconstruction.mÂ¡Â¯.
 *	numerical_ground_truth_aberrations: Numerically generated input and output aberrations for RM 
 simulations.
 
